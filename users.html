@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar bg-dark border-bottom border-body navbar-expand-lg"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <a href="index.html" class="navbar-brand">Admin Panel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="category.html" class="nav-link">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a href="product.html" class="nav-link">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="slider.html" class="nav-link">Slider</a>
+              </li>
+              <li class="nav-item">
+                <a href="role.html" class="nav-link">Role</a>
+              </li>
+              <li class="nav-item">
+                <a href="users.html" class="nav-link active">Users</a>
+              </li>
+              <li class="nav-item">
+                <a href="order.html" class="nav-link">Orders</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Sinan ALAGÖZ</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a href="myaccount.html" class="dropdown-item">My Account</a></li>
+                  <li><a href="login.html" class="dropdown-item">Exit</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a href="sign-up.html" class="nav-link">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-3">
+      <div class="row">
+        <div class="col">
+          <div class="card shadow">
+            <div
+              class="card-header py-1 d-flex justify-content-between align-items-center"
+            >
+              <h5 class="card-title">Users</h5>
+              <a href="add-user.html" class="btn btn-sm btn-primary">
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+
+            <div class="card-body">
+              <div class="table-responsive">
+                <table
+                  class="table table-bordered table-hover table-striped mb-0"
+                >
+                  <thead class="table-secondary">
+                    <tr>
+                      <th style="width: 20px">Id</th>
+                      <th style="width: 60px">Image</th>
+                      <th>User Name</th>
+                      <th>Name Surname</th>
+                      <th>Email</th>
+                      <th>Role</th>
+                      <th>Approval</th>
+                      <th style="width: 50px"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <img src="https://i.pravatar.cc/50?img=1" alt="user" class="rounded-circle" style="width:40px;height:40px;object-fit:cover;" />
+                      </td>
+                      <td>john_doe</td>
+                      <td>John Doe</td>
+                      <td>john@example.com</td>
+                      <td>Admin</td>
+                      <td><i class="fa-solid fa-circle-check text-success"></i></td>
+                      <td>
+                        <a href="add-user.html" class="btn btn-primary btn-sm">
+                          <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>
+                        <img src="https://i.pravatar.cc/50?img=5" alt="user" class="rounded-circle" style="width:40px;height:40px;object-fit:cover;" />
+                      </td>
+                      <td>jane_smith</td>
+                      <td>Jane Smith</td>
+                      <td>jane@example.com</td>
+                      <td>Editor</td>
+                      <td><i class="fa-solid fa-circle-check text-success"></i></td>
+                      <td>
+                        <a href="add-user.html" class="btn btn-primary btn-sm">
+                          <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>
+                        <img src="https://i.pravatar.cc/50?img=12" alt="user" class="rounded-circle" style="width:40px;height:40px;object-fit:cover;" />
+                      </td>
+                      <td>mike_wilson</td>
+                      <td>Mike Wilson</td>
+                      <td>mike@example.com</td>
+                      <td>User</td>
+                      <td><i class="fa-solid fa-circle-xmark text-danger"></i></td>
+                      <td>
+                        <a href="add-user.html" class="btn btn-primary btn-sm">
+                          <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>
+                        <img src="https://i.pravatar.cc/50?img=20" alt="user" class="rounded-circle" style="width:40px;height:40px;object-fit:cover;" />
+                      </td>
+                      <td>emily_jones</td>
+                      <td>Emily Jones</td>
+                      <td>emily@example.com</td>
+                      <td>User</td>
+                      <td><i class="fa-solid fa-circle-check text-success"></i></td>
+                      <td>
+                        <a href="add-user.html" class="btn btn-primary btn-sm">
+                          <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>
+                        <img src="https://i.pravatar.cc/50?img=33" alt="user" class="rounded-circle" style="width:40px;height:40px;object-fit:cover;" />
+                      </td>
+                      <td>chris_brown</td>
+                      <td>Chris Brown</td>
+                      <td>chris@example.com</td>
+                      <td>Editor</td>
+                      <td><i class="fa-solid fa-circle-xmark text-danger"></i></td>
+                      <td>
+                        <a href="add-user.html" class="btn btn-primary btn-sm">
+                          <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

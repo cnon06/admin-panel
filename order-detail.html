@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Detail</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar bg-dark border-bottom border-body navbar-expand-lg"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <a href="index.html" class="navbar-brand">Admin Panel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="category.html" class="nav-link">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a href="product.html" class="nav-link">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="slider.html" class="nav-link">Slider</a>
+              </li>
+              <li class="nav-item">
+                <a href="role.html" class="nav-link">Role</a>
+              </li>
+              <li class="nav-item">
+                <a href="users.html" class="nav-link">Users</a>
+              </li>
+              <li class="nav-item">
+                <a href="order.html" class="nav-link active">Orders</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Sinan ALAGÖZ</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a href="myaccount.html" class="dropdown-item">My Account</a></li>
+                  <li><a href="login.html" class="dropdown-item">Exit</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a href="sign-up.html" class="nav-link">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-3">
+      <div class="row g-3">
+
+        <!-- Order Items -->
+        <div class="col-md-8">
+          <div class="card shadow">
+            <div class="card-header py-1 d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-0">Order Detail</h5>
+              <a href="order.html" class="btn btn-sm btn-primary">
+                <i class="fa-solid fa-list"></i>
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped mb-0">
+                  <thead class="table-secondary">
+                    <tr>
+                      <th style="width: 60px">Image</th>
+                      <th>Product Name</th>
+                      <th style="width: 80px">Quantity</th>
+                      <th style="width: 100px">Unit Price</th>
+                      <th style="width: 100px">Subtotal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><img src="img/laptop-1.jpg" alt="" class="img-fluid" style="width:50px;" /></td>
+                      <td>Laptop Pro 15"</td>
+                      <td>1</td>
+                      <td>$249.99</td>
+                      <td>$249.99</td>
+                    </tr>
+                    <tr>
+                      <td><img src="img/headphone-1.jpg" alt="" class="img-fluid" style="width:50px;" /></td>
+                      <td>Wireless Headphones</td>
+                      <td>2</td>
+                      <td>$49.99</td>
+                      <td>$99.98</td>
+                    </tr>
+                    <tr>
+                      <td><img src="img/phone-1.jpg" alt="" class="img-fluid" style="width:50px;" /></td>
+                      <td>Phone Case</td>
+                      <td>1</td>
+                      <td>$0.02</td>
+                      <td>$0.02</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-4 d-flex flex-column gap-3">
+
+          <!-- Order Info -->
+          <div class="card shadow">
+            <div class="card-header py-1">
+              <h6 class="card-title mb-0">Order Info</h6>
+            </div>
+            <div class="card-body">
+              <table class="table table-sm mb-0">
+                <tr>
+                  <th>Order No</th>
+                  <td>#ORD-1001</td>
+                </tr>
+                <tr>
+                  <th>Date</th>
+                  <td>2026-06-20</td>
+                </tr>
+                <tr>
+                  <th>Status</th>
+                  <td>
+                    <select class="form-select form-select-sm">
+                      <option>Pending</option>
+                      <option>Processing</option>
+                      <option>Shipped</option>
+                      <option selected>Delivered</option>
+                      <option>Cancelled</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Customer Info -->
+          <div class="card shadow">
+            <div class="card-header py-1">
+              <h6 class="card-title mb-0">Customer</h6>
+            </div>
+            <div class="card-body">
+              <table class="table table-sm mb-0">
+                <tr>
+                  <th>Name</th>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <th>Email</th>
+                  <td>john@example.com</td>
+                </tr>
+                <tr>
+                  <th>Address</th>
+                  <td>123 Main St, New York, NY</td>
+                </tr>
+                <tr><td colspan="2"><hr class="my-1" /></td></tr>
+                <tr>
+                  <th>Payment</th>
+                  <td>Credit Card</td>
+                </tr>
+                <tr>
+                  <th>Card</th>
+                  <td>**** **** **** 4242</td>
+                </tr>
+                <tr>
+                  <th>Paid</th>
+                  <td><span class="badge bg-success">Yes</span></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Order Summary -->
+          <div class="card shadow">
+            <div class="card-header py-1">
+              <h6 class="card-title mb-0">Summary</h6>
+            </div>
+            <div class="card-body">
+              <table class="table table-sm mb-0">
+                <tr>
+                  <th>Subtotal</th>
+                  <td class="text-end">$349.99</td>
+                </tr>
+                <tr>
+                  <th>Shipping</th>
+                  <td class="text-end">$0.00</td>
+                </tr>
+                <tr class="table-secondary fw-bold">
+                  <th>Total</th>
+                  <td class="text-end">$349.99</td>
+                </tr>
+              </table>
+              <div class="mt-2">
+                <button class="btn btn-primary w-100">Save Status</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
